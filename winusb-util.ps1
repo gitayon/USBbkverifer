@@ -449,7 +449,7 @@ $addButton.Add_Click({
 
     [void]$pairs.Add($pair)
 
-    Refresh-PairList
+    Update-PairList
 
     Update-Status "Pair added."
 
@@ -479,7 +479,7 @@ $removeButton.Add_Click({
 
     $pairs.RemoveAt($index)
 
-    Refresh-PairList
+    Update-PairList
 
     Update-Status "Pair removed."
 })
@@ -511,7 +511,7 @@ $clearButton.Add_Click({
 
         $pairs.Clear()
 
-        Refresh-PairList
+        Update-PairList
 
         Update-Status "All pairs removed."
     }
